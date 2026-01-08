@@ -1,0 +1,1 @@
+Detta är ett exempel på text. Texten innehåller flera ord, några ord upprepas flera gånger. Vi testar textanalysatorn med detta exempel.
