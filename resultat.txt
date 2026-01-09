@@ -1,0 +1,8 @@
+Antal ord: 21
+Längsta ordet: textanalysatorn
+Mest förekommande ord:
+detta: 2
+flera: 2
+är: 1
+ett: 1
+exempel: 1

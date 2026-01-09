@@ -1,4 +1,6 @@
-def read_text(path):
-    """Läser text från en fil och returnerar som sträng."""
-    with open(path, "r", encoding="utf-8") as file:
-        return file.read()
+def read_text(filepath):
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
+        return ""

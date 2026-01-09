@@ -1,13 +1,10 @@
+# analyzer/statistics.py
+
 from collections import Counter
 
-def get_word_stats(words):
-    """Returnerar statistik om orden i texten."""
-    count = len(words)
-    longest = max(words, key=len) if words else ""
-    most_common = Counter(words).most_common(5)
-    
-    return {
-        "count": count,
-        "longest": longest,
-        "most_common": most_common
-    }
+def print_statistics(words):
+    """Skriver ut statistik för orden"""
+    print("[INFO] Mest förekommande ord:")
+    word_counts = Counter(words)
+    for word, count in word_counts.most_common(5):
+        print(f"{word}: {count}")
